@@ -5,12 +5,13 @@ from both a traditional fuel-based car and an electric vehicle,
 showcasing the use of multiple inheritance in C++
 */
 #include <iostream>
+using namespace std;
 
 // Base class 1: Car
 class Car {
 public:
     void drive() {
-        std::cout << "Car => Driving using fuel engine" << std::endl;
+        cout << "Car => Driving using fuel engine" << endl;
     }
 };
 
@@ -18,7 +19,7 @@ public:
 class ElectricVehicle {
 public:
     void chargeBattery() {
-        std::cout << "eVe => Charging the electric battery" << std::endl;
+        cout << "eVe => Charging the electric battery" << endl;
     }
 };
 
@@ -26,7 +27,7 @@ public:
 class HybridCar : public Car, public ElectricVehicle {
 public:
     void hybridMode() {
-        std::cout << "Hyb => Switching to hybrid mode" << std::endl;
+        cout << "Hyb => Switching to hybrid mode" << endl;
     }
 };
 
